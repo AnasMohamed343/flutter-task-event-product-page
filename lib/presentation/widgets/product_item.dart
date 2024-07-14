@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 
 import '../../domain/entities/product.dart';
 
@@ -55,11 +56,12 @@ class ProductItem extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     child: Icon(
-                      Icons.favorite_outline,
+                      IconlyLight.heart,
                       color: Colors.blue,
-                      size: 25,
+                      size: 30,
                     ),
                     style: ElevatedButton.styleFrom(
+                      fixedSize: Size(5, 5),
                       backgroundColor: Colors.white,
                       shape: CircleBorder(),
                       padding: EdgeInsets.all(1),

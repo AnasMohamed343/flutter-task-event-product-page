@@ -5,6 +5,7 @@ A new Flutter project.
 ## Screenshots
 
 !product_screen
+!search_screen
 
 ## Getting Started
 
