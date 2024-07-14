@@ -4,8 +4,12 @@ A new Flutter project.
 
 ## Screenshots
 
-!product_screen
-!search_screen
+product_screen
+![product_screen](https://github.com/user-attachments/assets/aa3c706a-909c-49ee-a9c7-3f55bafda11a)
+
+search_screen
+![search_screen](https://github.com/user-attachments/assets/0fee118e-5ba2-43c0-b66a-50c48340f2ed)
+
 
 ## Getting Started
 
