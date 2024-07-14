@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../cubit/product_cubit.dart';
 
 class CustomTextField extends StatelessWidget {
   String? textFieldTitle;
+  final TextEditingController _controller = TextEditingController();
 
   CustomTextField({
     this.textFieldTitle,
@@ -14,14 +18,24 @@ class CustomTextField extends StatelessWidget {
       width: 300,
       margin: EdgeInsets.symmetric(horizontal: 10, vertical: 12),
       child: TextField(
+        controller: _controller,
         cursorColor: Colors.blue,
         decoration: InputDecoration(
           fillColor: Colors.white,
           filled: true,
           hintText: textFieldTitle,
-          prefixIcon: Icon(
-            Icons.search,
-            color: Colors.blue,
+          prefixIcon: InkWell(
+            onTap: () {
+              if (_controller.text.length >= 3) {
+                context
+                    .read<ProductCubit>()
+                    .searchProductsByTitle(_controller.text);
+              }
+            },
+            child: Icon(
+              Icons.search,
+              color: Colors.blue,
+            ),
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.blue),

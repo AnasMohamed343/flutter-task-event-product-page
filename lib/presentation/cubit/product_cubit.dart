@@ -32,4 +32,19 @@ class ProductCubit extends Cubit<ProductState> {
       emit(ProductError(e.toString()));
     }
   }
+
+  Future<void> searchProductsByTitle(String title) async {
+    try {
+      final products = await loadProducts();
+      final filteredProducts = products
+          .where((product) => product.title!
+              .toLowerCase()
+              .trim()
+              .startsWith(title.toLowerCase().trim()))
+          .toList();
+      emit(ProductLoaded(filteredProducts));
+    } catch (e) {
+      emit(ProductError(e.toString()));
+    }
+  }
 }

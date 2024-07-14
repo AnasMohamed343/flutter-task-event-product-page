@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/di/injection.dart';
 import '../cubit/product_cubit.dart';
@@ -14,14 +13,11 @@ class ProductPage extends StatelessWidget {
       create: (context) => getIt<ProductCubit>()..fetchProducts(),
       child: Scaffold(
         appBar: AppBar(
-          title: Text(
-            'Route',
-            style: GoogleFonts.sofia(
-              textStyle: TextStyle(
-                  color: Colors.blue,
-                  fontWeight: FontWeight.normal,
-                  fontSize: 28),
-            ),
+          title: Image.asset(
+            'assets/images/appbar_title.png',
+            alignment: Alignment.centerLeft,
+            height: 70,
+            width: 80,
           ),
         ),
         body: Column(
