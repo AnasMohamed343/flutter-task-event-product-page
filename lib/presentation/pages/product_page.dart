@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../core/di/injection.dart';
 import '../cubit/product_cubit.dart';
 import '../widgets/custom_text_field.dart';
 import '../widgets/product_item.dart';
-//import 'package:google_fonts/google_fonts.dart';
 
 class ProductPage extends StatelessWidget {
   @override
@@ -16,10 +16,12 @@ class ProductPage extends StatelessWidget {
         appBar: AppBar(
           title: Text(
             'Route',
-            style: TextStyle(
-                color: Colors.blue,
-                fontWeight: FontWeight.normal,
-                fontStyle: FontStyle.italic),
+            style: GoogleFonts.sofia(
+              textStyle: TextStyle(
+                  color: Colors.blue,
+                  fontWeight: FontWeight.normal,
+                  fontSize: 28),
+            ),
           ),
         ),
         body: Column(
