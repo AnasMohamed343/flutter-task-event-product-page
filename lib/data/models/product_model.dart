@@ -2,17 +2,17 @@ import '../../domain/entities/product.dart';
 
 class ProductModel extends Product {
   ProductModel({
-    required int id,
-    required String title,
-    required String description,
-    required double price,
-    required double discountPercentage,
-    required double rating,
-    required int stock,
-    required String brand,
-    required String category,
-    required String thumbnail,
-    required List<String> images,
+    final int? id,
+    final String? title,
+    final String? description,
+    final double? price,
+    final double? discountPercentage,
+    final double? rating,
+    final int? stock,
+    final String? brand,
+    final String? category,
+    final String? thumbnail,
+    final List<String>? images,
   }) : super(
           id: id,
           title: title,

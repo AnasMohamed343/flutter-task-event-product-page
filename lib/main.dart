@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         RepositoryProvider(create: (context) => getIt<ProductRepositoryImpl>()),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: ProductPage(),
       ),
     );

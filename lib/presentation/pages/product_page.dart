@@ -5,6 +5,7 @@ import '../../core/di/injection.dart';
 import '../cubit/product_cubit.dart';
 import '../widgets/custom_text_field.dart';
 import '../widgets/product_item.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 class ProductPage extends StatelessWidget {
   @override
@@ -16,7 +17,9 @@ class ProductPage extends StatelessWidget {
           title: Text(
             'Route',
             style: TextStyle(
-                fontWeight: FontWeight.normal, fontStyle: FontStyle.italic),
+                color: Colors.blue,
+                fontWeight: FontWeight.normal,
+                fontStyle: FontStyle.italic),
           ),
         ),
         body: Column(

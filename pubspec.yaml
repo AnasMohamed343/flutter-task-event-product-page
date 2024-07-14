@@ -32,7 +32,6 @@ dependencies:
     sdk: flutter
 
   flutter_bloc: ^8.0.0
-  http: ^0.13.3
   get_it: ^7.2.0
   injectable: ^1.5.0
   equatable: ^2.0.0
@@ -44,10 +43,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  http: ^0.13.3
-  #flutter_bloc: ^8.0.1
   injectable_generator: ^1.5.0
   build_runner: ^2.1.7
+  http: ^0.13.3
+  google_fonts: ^4.0.0
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -55,6 +55,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

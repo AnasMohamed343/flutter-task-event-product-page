@@ -7,7 +7,7 @@ import '../../domain/repositories/product_repository.dart';
 import '../models/product_model.dart';
 
 class ProductRepositoryImpl implements ProductRepository {
-  final String apiUrl = "https://dummyjson.com/products";
+  final String apiUrl = 'https://dummyjson.com/products';
 
   @override
   Future<List<Product>> fetchProducts() async {
